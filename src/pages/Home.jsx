@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RingLoader } from 'react-spinners';
+import { RotateLoader } from 'react-spinners';
 import { fetchTrendingMovies } from 'services/themoviedb-api';
 import Hero from 'components/Hero/Hero';
 import MoviesList from 'components/MoviesList/MoviesList';
@@ -34,7 +34,7 @@ const Home = () => {
             alignItems: 'center',
           }}
         >
-          <RingLoader color="#004d40" size={120} />
+          <RotateLoader color="#7ca6df" size={30} />
         </div>
       ) : (
         <>
